@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ▼ 기본 SEO : 메인 키워드 "퀵서비스 기사 모집"을 제목 앞쪽에 배치 -->
+<title>퀵서비스 기사 모집·채용 | 오토바이 라이더 | 인성데이타 인성1·인성2</title>
+<meta name="description" content="오토바이 퀵서비스 기사 모집. 예치금 0원, 비대면 전화 가입, 24시간 상시 출금, 초보 노하우 교육 제공. 인성데이타 인성1·인성2 동시 가입으로 가장 많은 오더를 받아보세요.">
+<link rel="canonical" href="https://www.example.com/"><!-- 실제 도메인으로 교체 -->
+
+<!-- ▼ 소셜/썸네일 : 2026.3 구글 문서 기준, og:image + 구조화 데이터 image 동시 지정 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="퀵서비스 기사 모집 | 오토바이 라이더 채용 | 인성데이타">
+<meta property="og:description" content="예치금 0원 · 비대면 가입 · 24시간 출금 · 초보 교육 제공. 인성1·인성2 동시 가입.">
+<meta property="og:image" content="https://www.example.com/images/og-main.jpg"><!-- 1200x630 권장, 교체 -->
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:locale" content="ko_KR">
+
+<!-- ▼ 구조화 데이터 : JobPosting + Organization + FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "오토바이 퀵서비스 기사 모집 (전국)",
+  "description": "출퇴근 자유, 예치금 0원, 비대면 전화 가입, 24시간 상시 출금. 인성데이타 인성1·인성2 연동 프로그램으로 오더 수령. 초보자 오프라인 노하우 교육 제공.",
+  "datePosted": "2026-07-19",
+  "employmentType": "CONTRACTOR",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "인성데이타 퀵서비스 (상호명 교체)",
+    "sameAs": "https://www.example.com",
+    "logo": "https://www.example.com/images/logo.png"
+  },
+  "jobLocationType": "TELECOMMUTE",
+  "applicantLocationRequirements": { "@type": "Country", "name": "대한민국" },
+  "directApply": true
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "퀵서비스가 처음인데 시작할 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "가능합니다. 처음 시작하는 분들을 위해 오프라인 노하우 교육을 별도로 제공하며, 길이나 일하는 방식에 대한 걱정 없이 적응할 수 있도록 돕습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "가입할 때 예치금이나 보증금이 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "기사 예치금은 0원입니다. 시작할 때 보증금처럼 묶이는 돈이 없어 부담 없이 시작할 수 있습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "정산은 언제 받을 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "24시간 상시 출금이 가능합니다. 정산일까지 기다릴 필요 없이 번 돈을 필요할 때 바로 출금할 수 있습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "사무실에 방문해야 가입할 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "아니요. 비대면 전화 가입이 가능합니다. 전화 한 통으로 가입 절차가 진행되며 사무실 방문이 필요 없습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "수수료는 얼마인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "오토바이 기준 기본 수수료 23%입니다. 인성데이타 수수료는 자율형으로, 일부 고수익 콜은 수수료가 없는 콜도 있으며 오더 수락 전 수수료를 확인한 뒤 콜을 선택할 수 있습니다." }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<style>
+/* ============ 토큰 ============ */
+:root{
+  --ink:#111B3C;          /* 딥 네이비 잉크 */
+  --ink-soft:#3C4763;
+  --base:#FAFBFD;
+  --panel:#FFFFFF;
+  --line:#E3E7EF;
+  --accent:#FF4E16;       /* 시그널 오렌지 (CTA 전용) */
+  --accent-dark:#DB3C0A;
+  --road:#FFC400;         /* 도로 중앙선 옐로 (구분선 전용) */
+  --steel:#6B7590;
+}
+@font-face{
+  font-family:'GmarketSans';
+  src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight:700; font-display:swap;
+}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif;
+  background:var(--base); color:var(--ink);
+  font-size:16px; line-height:1.65; word-break:keep-all;
+}
+h1,h2,h3,.disp{font-family:'GmarketSans','Pretendard',sans-serif;font-weight:700;line-height:1.3}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ============ 헤더 & 드랍다운 ============ */
+header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(250,251,253,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav-bar{display:flex;align-items:center;gap:28px;height:66px}
+.logo{font-family:'GmarketSans';font-size:1.15rem;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.logo b{color:var(--accent)}
+.logo-mark{width:26px;height:26px;border-radius:7px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:.8rem}
+nav.gnb{margin-left:auto}
+nav.gnb ul{list-style:none;display:flex;gap:4px}
+nav.gnb > ul > li{position:relative}
+nav.gnb > ul > li > a{
+  display:block;padding:10px 14px;font-weight:600;font-size:.95rem;border-radius:8px;
+}
+nav.gnb > ul > li > a:hover{background:#EEF1F7}
+.sub{
+  position:absolute;top:100%;left:0;min-width:190px;
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  box-shadow:0 12px 32px rgba(17,27,60,.12);
+  padding:8px;display:none;flex-direction:column;gap:2px;
+}
+.sub a{padding:9px 12px;border-radius:8px;font-size:.9rem;color:var(--ink-soft);display:block}
+.sub a:hover{background:#F2F5FA;color:var(--ink)}
+nav.gnb li:hover > .sub, nav.gnb li:focus-within > .sub{display:flex}
+.cta-head{
+  margin-left:8px;background:var(--accent);color:#fff;font-weight:700;font-size:.92rem;
+  padding:11px 18px;border-radius:10px;white-space:nowrap;
+}
+.cta-head:hover{background:var(--accent-dark)}
+.ham{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:1.05rem;cursor:pointer}
+
+/* 모바일 내비 */
+@media (max-width:880px){
+  nav.gnb{display:none;position:absolute;top:66px;left:0;right:0;background:var(--panel);
+    border-bottom:1px solid var(--line);padding:10px 16px 18px;margin:0}
+  nav.gnb.open{display:block}
+  nav.gnb ul{flex-direction:column;gap:0}
+  nav.gnb > ul > li > a{padding:13px 8px;border-bottom:1px solid var(--line)}
+  .sub{position:static;display:flex;border:none;box-shadow:none;padding:0 0 6px 14px;background:transparent}
+  .ham{display:block}
+  .cta-head{display:none}
+}
+
+/* ============ 시그니처 : 도로 중앙선 ============ */
+.roadline{position:relative}
+@media (min-width:960px){
+  .roadline::before{
+    content:"";position:absolute;left:50%;top:0;bottom:0;width:0;
+    border-left:4px dashed var(--road);opacity:.55;transform:translateX(-2px);
+  }
+  .roadline > *{position:relative}
+}
+
+/* ============ 히어로 ============ */
+.hero{padding:72px 0 64px;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.badge{display:inline-block;background:#FFF1EB;color:var(--accent-dark);font-weight:700;
+  font-size:.85rem;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(1.9rem,4.2vw,3.05rem);letter-spacing:-.02em;margin-bottom:18px}
+h1 .hl{color:var(--accent)}
+.hero p.lead{color:var(--ink-soft);font-size:1.08rem;max-width:34em;margin-bottom:28px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;border-radius:12px;
+  padding:15px 26px;font-size:1.02rem;transition:transform .12s ease}
+.btn:active{transform:scale(.98)}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-dark)}
+.btn-ghost{background:var(--panel);border:1.5px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--steel)}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chips span{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:8px 14px;font-size:.85rem;font-weight:600;color:var(--ink-soft)}
+.chips b{color:var(--ink)}
+
+/* 히어로 카드(오더 티켓 모티프) */
+.ticket{
+  background:var(--ink);color:#fff;border-radius:20px;padding:26px 26px 22px;
+  box-shadow:0 24px 60px rgba(17,27,60,.28);max-width:380px;margin-left:auto;
+  position:relative;
+}
+.ticket::after{ /* 절취선 */
+  content:"";position:absolute;left:22px;right:22px;bottom:64px;
+  border-top:2px dashed rgba(255,255,255,.25);
+}
+.ticket .tk-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.ticket .tk-top small{opacity:.65;font-size:.78rem;letter-spacing:.08em}
+.ticket .tk-live{display:flex;align-items:center;gap:6px;font-size:.78rem;color:#7DF0B2;font-weight:700}
+.ticket .dot{width:8px;height:8px;border-radius:50%;background:#7DF0B2;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.tk-row{display:flex;justify-content:space-between;padding:9px 0;font-size:.95rem}
+.tk-row span{opacity:.7}
+.tk-row b{font-weight:700}
+.tk-foot{margin-top:26px;display:flex;justify-content:space-between;align-items:center}
+.tk-foot .fee{font-family:'GmarketSans';font-size:1.35rem;color:var(--road)}
+.tk-foot small{opacity:.6;font-size:.75rem}
+@media (max-width:880px){
+  .hero .wrap{grid-template-columns:1fr}
+  .ticket{margin:0 auto}
+}
+
+/* ============ 공통 섹션 ============ */
+section{padding:74px 0}
+.eyebrow{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:.12em;margin-bottom:10px}
+h2{font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.01em;margin-bottom:14px}
+.sec-lead{color:var(--ink-soft);max-width:38em;margin-bottom:40px}
+.center{text-align:center}
+.center .sec-lead{margin-left:auto;margin-right:auto}
+
+/* 혜택 카드 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:960px){.grid4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid4{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 22px}
+.card .ico{width:44px;height:44px;border-radius:12px;background:#FFF1EB;display:grid;place-items:center;
+  font-size:1.3rem;margin-bottom:16px}
+.card h3{font-size:1.05rem;margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--ink-soft)}
+
+/* 초보자 섹션 */
+.newbie{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.newbie .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media (max-width:880px){.newbie .wrap{grid-template-columns:1fr}}
+.worry{background:#F4F6FA;border-radius:14px;padding:18px 20px;margin-bottom:12px;display:flex;gap:12px;align-items:flex-start}
+.worry .q{font-family:'GmarketSans';color:var(--steel);font-size:1.1rem;line-height:1}
+.worry p{font-size:.95rem;color:var(--ink-soft)}
+.worry p b{color:var(--ink)}
+
+/* 플랫폼 */
+.plat{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+@media (max-width:720px){.plat{grid-template-columns:1fr}}
+.plat .card{border-top:4px solid var(--ink)}
+.plat .card.main{border-top-color:var(--accent)}
+.plat .tag{display:inline-block;font-size:.75rem;font-weight:700;padding:4px 10px;border-radius:999px;
+  background:#EEF1F7;color:var(--ink-soft);margin-bottom:12px}
+.plat .card.main .tag{background:#FFF1EB;color:var(--accent-dark)}
+.note{background:#F4F6FA;border-radius:12px;padding:16px 20px;font-size:.9rem;color:var(--ink-soft)}
+.note b{color:var(--ink)}
+
+/* 수수료 표 */
+.feewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;font-size:.95rem}
+caption{caption-side:bottom;text-align:left;font-size:.82rem;color:var(--steel);padding:12px 4px}
+th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line)}
+thead th{background:var(--ink);color:#fff;font-weight:700;font-size:.88rem}
+tbody tr:last-child td{border-bottom:none}
+td b.big{font-family:'GmarketSans';font-size:1.1rem}
+td .free{color:var(--accent-dark);font-weight:700}
+
+/* 절차 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
+@media (max-width:960px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 20px;counter-increment:step}
+.step::before{
+  content:counter(step,decimal-leading-zero);
+  font-family:'GmarketSans';color:var(--road);font-size:1.2rem;display:block;margin-bottom:12px;
+  text-shadow:0 0 0 var(--ink);
+}
+.step h3{font-size:1rem;margin-bottom:6px}
+.step p{font-size:.9rem;color:var(--ink-soft)}
+
+/* FAQ */
+details{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+summary{padding:18px 22px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:'GmarketSans';color:var(--steel)}
+details[open] summary::after{content:"–"}
+details .a{padding:0 22px 20px;color:var(--ink-soft);font-size:.95rem}
+
+/* 하단 CTA */
+.bottom-cta{background:var(--ink);color:#fff;text-align:center;border-radius:24px;
+  padding:60px 24px;margin:0 20px}
+.bottom-cta h2{color:#fff}
+.bottom-cta p{opacity:.75;margin-bottom:28px}
+.bottom-cta .btn-fill{font-size:1.1rem;padding:17px 34px}
+.bottom-cta .tel{margin-top:18px;font-family:'GmarketSans';font-size:1.3rem;color:var(--road)}
+
+/* 푸터 (E-E-A-T: 운영 주체·연락처·책임자 명시) */
+footer{padding:56px 0 70px;color:var(--steel);font-size:.88rem}
+.f-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;margin-bottom:28px}
+@media (max-width:720px){.f-grid{grid-template-columns:1fr}}
+footer h4{color:var(--ink);font-size:.95rem;margin-bottom:12px}
+footer li{list-style:none;margin-bottom:8px}
+footer a:hover{color:var(--ink);text-decoration:underline}
+.f-legal{border-top:1px solid var(--line);padding-top:22px;line-height:1.9}
+</style>
+</head>
+<body>
+
+<!-- ================= 헤더 ================= -->
+<header>
+  <div class="wrap nav-bar">
+    <a class="logo" href="#top" aria-label="홈으로">
+      <span class="logo-mark" aria-hidden="true">퀵</span>
+      인성데이타 <b>퀵서비스</b>
+    </a>
+    <button class="ham" aria-expanded="false" aria-controls="gnb" onclick="toggleNav(this)">☰ 메뉴</button>
+    <nav class="gnb" id="gnb" aria-label="주 메뉴">
+      <ul>
+        <li>
+          <a href="#recruit" aria-haspopup="true">기사 모집 안내</a>
+          <div class="sub" role="menu">
+            <a href="#recruit">모집 요강</a>
+            <a href="#newbie">초보자 안내</a>
+            <a href="#process">가입 절차 (비대면)</a>
+          </div>
+        </li>
+        <li>
+          <a href="#fee" aria-haspopup="true">수익·수수료</a>
+          <div class="sub" role="menu">
+            <a href="#fee">수수료 안내</a>
+            <a href="#fee">관리비·보험료</a>
+            <a href="#benefit">24시간 출금</a>
+          </div>
+        </li>
+        <li>
+          <a href="#platform" aria-haspopup="true">인성 프로그램</a>
+          <div class="sub" role="menu">
+            <a href="#platform">인성1 · 인성2</a>
+            <a href="#platform">자사·공유 오더</a>
+          </div>
+        </li>
+        <li>
+          <a href="#faq" aria-haspopup="true">교육·지원</a>
+          <div class="sub" role="menu">
+            <a href="#newbie">노하우 교육</a>
+            <a href="#faq">자주 묻는 질문</a>
+          </div>
+        </li>
+        <li>
+          <a href="#company" aria-haspopup="true">회사 소개</a>
+          <div class="sub" role="menu">
+            <a href="#company">운영 안내</a>
+            <a href="#company">연락처</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <a class="cta-head" href="tel:05082024690">📞 전화 가입 신청</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= 히어로 ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="badge">전국 오토바이 기사 상시 모집</span>
+      <h1>퀵서비스 기사 모집,<br>오늘 전화하면 <span class="hl">오늘 시작</span>합니다</h1>
+      <p class="lead">
+        인성데이타 인성1·인성2 연동 프로그램으로 가장 많은 오더를 받아가세요.
+        정해진 출근 시간 없이 내 스케줄대로, 번 돈은 24시간 언제든 출금.
+        퀵이 처음이어도 노하우 교육으로 시작을 돕습니다.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-fill" href="tel:05082024690">📞 전화 한 통으로 가입하기</a>
+        <a class="btn btn-ghost" href="#fee">수수료 먼저 확인하기</a>
+      </div>
+      <div class="chips">
+        <span>예치금 <b>0원</b></span>
+        <span><b>비대면</b> 전화 가입</span>
+        <span><b>24시간</b> 상시 출금</span>
+        <span>초보 <b>노하우 교육</b></span>
+      </div>
+    </div>
+
+    <div class="ticket" role="img" aria-label="오더 예시 카드: 인성1 공유 오더, 수수료를 확인한 뒤 콜을 선택할 수 있습니다">
+      <div class="tk-top">
+        <small>ORDER TICKET</small>
+        <span class="tk-live"><span class="dot"></span>실시간 배정 중</span>
+      </div>
+      <div class="tk-row"><span>플랫폼</span><b>인성1 · 공유 오더</b></div>
+      <div class="tk-row"><span>차량</span><b>오토바이</b></div>
+      <div class="tk-row"><span>가입비 · 예치금</span><b>0원</b></div>
+      <div class="tk-row"><span>정산</span><b>24시간 즉시 출금</b></div>
+      <div class="tk-foot">
+        <div>
+          <small>수락 전 수수료 확인</small>
+          <div class="fee">기본 23%</div>
+        </div>
+        <small>무료 수수료 콜 존재</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="roadline">
+
+<!-- ================= 핵심 혜택 ================= -->
+<section id="benefit" class="center">
+  <div class="wrap">
+    <div class="eyebrow">WHY US</div>
+    <h2>기사님이 먼저 찾는 4가지 이유</h2>
+    <p class="sec-lead">부업이든 전업이든, 시작 부담을 없애고 수익은 바로 손에 쥘 수 있게 만들었습니다.</p>
+    <div class="grid4" style="text-align:left">
+      <div class="card">
+        <div class="ico" aria-hidden="true">🕐</div>
+        <h3>출퇴근 자유</h3>
+        <p>정해진 출근 시간이 없습니다. 오전만, 주말만, 투잡으로 — 본인 스케줄대로 움직이는 구조입니다.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true">💸</div>
+        <h3>24시간 상시 출금</h3>
+        <p>정산일까지 기다리지 않습니다. 오늘 번 돈, 필요할 때 바로 출금할 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true">🎓</div>
+        <h3>노하우 교육 제공</h3>
+        <p>퀵이 처음이어도 일하는 방식을 알려드립니다. 맨몸으로 던져지는 일은 없습니다.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true">📱</div>
+        <h3>비대면 가입 · 예치금 0원</h3>
+        <p>사무실 방문 없이 전화로 가입이 끝납니다. 보증금처럼 묶이는 돈도 없습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 초보자 안내 ================= -->
+<section id="newbie" class="newbie">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">FIRST TIMER</div>
+      <h2>처음이라 망설여진다면</h2>
+      <p class="sec-lead">퀵을 처음 시작하는 분들이 가장 많이 하시는 걱정은 딱 두 가지입니다.</p>
+      <div class="worry">
+        <span class="q" aria-hidden="true">Q1</span>
+        <p><b>"길을 잘 몰라서요."</b><br>내비게이션 활용법부터 효율적인 동선 잡는 법까지 교육에서 다룹니다.</p>
+      </div>
+      <div class="worry">
+        <span class="q" aria-hidden="true">Q2</span>
+        <p><b>"어떻게 일하는지 몰라서요."</b><br>콜 잡는 법, 픽업·전달 요령, 수수료 보는 법을 처음부터 알려드립니다.</p>
+      </div>
+    </div>
+    <div class="card" style="border-top:4px solid var(--road)">
+      <h3 style="font-size:1.2rem;margin-bottom:12px">오프라인 노하우 교육 별도 제공</h3>
+      <p style="color:var(--ink-soft);margin-bottom:20px">
+        완전 초보여도 곧 잘 적응하실 수 있도록 오프라인 노하우 교육을 따로 제공합니다.
+        두려움 갖지 않으셔도 됩니다. 지금 일하고 계신 기사님들 상당수가 초보로 시작했습니다.
+      </p>
+      <a class="btn btn-fill" href="tel:05082024690">교육 포함 가입 문의하기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 인성 플랫폼 ================= -->
+<section id="platform">
+  <div class="wrap">
+    <div class="eyebrow">PLATFORM</div>
+    <h2>인성1 · 인성2 동시 가입, 오더는 가장 많이</h2>
+    <p class="sec-lead">
+      저희는 인성데이타 기반 인성1, 인성2 플랫폼과 연동된 기사 프로그램을 운영하며,
+      기사님께 가장 많은 오더와 수익 기회를 제공합니다. 저희 사무실은 <b>인성1 메인</b>입니다.
+    </p>
+    <div class="plat">
+      <div class="card main">
+        <span class="tag">MAIN · 인성1</span>
+        <h3>안정적인 오더 · 신뢰성 있는 고객사</h3>
+        <p>꾸준한 오더 양과 검증된 고객사를 바탕으로 안정적인 수익을 만들 수 있습니다. 자사 오더(등록 사무실의 빠른 콜)와 공유 오더(전체 기사 배정)를 함께 받습니다.</p>
+      </div>
+      <div class="card">
+        <span class="tag">인성2</span>
+        <h3>기사 수 최다 · 콜 배정량 최고 수준</h3>
+        <p>가장 많은 기사가 활동하는 플랫폼으로, 콜 배정량이 최고 수준입니다. 인성1과 동시 가입해 오더 수령 폭을 넓혀드립니다.</p>
+      </div>
+    </div>
+    <p class="note">※ 어플 사용은 기사님이 <b>자율적으로 선택</b>할 수 있으며, 가입 시 기본적으로 <b>인성1·인성2 동시 가입</b>을 도와드립니다.</p>
+  </div>
+</section>
+
+<!-- ================= 수수료 ================= -->
+<section id="fee">
+  <div class="wrap">
+    <div class="eyebrow">FEE</div>
+    <h2>수수료 · 관리비 · 보험료, 숨김 없이 공개합니다</h2>
+    <p class="sec-lead">오더 수락 전에 반드시 수수료를 확인한 뒤 콜을 선택할 수 있습니다. 수수료는 자율형이며, 일부 고수익 콜은 수수료가 없는 콜도 있습니다.</p>
+    <div class="feewrap">
+      <table>
+        <caption>오토바이 기사 기준 · 2026년 7월 현재 · 세부 조건은 가입 상담 시 안내</caption>
+        <thead>
+          <tr><th scope="col">구분</th><th scope="col">항목</th><th scope="col">금액 / 비율</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2"><b>수수료</b></td>
+            <td>오토바이 기본 수수료</td>
+            <td><b class="big">23%</b></td>
+          </tr>
+          <tr>
+            <td>고수익 일부 콜</td>
+            <td><span class="free">수수료 0% 콜 존재</span> (수락 전 확인 가능)</td>
+          </tr>
+          <tr>
+            <td rowspan="2"><b>관리비</b></td>
+            <td>인성1 단독 가입</td>
+            <td><b class="big">1,660원</b> / 일</td>
+          </tr>
+          <tr>
+            <td>인성2 동시 가입</td>
+            <td><b class="big">660원</b> / 일</td>
+          </tr>
+          <tr>
+            <td><b>적재물 보험료</b></td>
+            <td>오토바이</td>
+            <td><b class="big">200원</b> / 일</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 가입 절차 ================= -->
+<section id="process" class="center">
+  <div class="wrap">
+    <div class="eyebrow">PROCESS</div>
+    <h2>사무실 방문 없이, 전화 한 통이면 끝</h2>
+    <p class="sec-lead">가입부터 첫 콜까지 비대면으로 진행됩니다.</p>
+    <div class="steps" style="text-align:left">
+      <div class="step">
+        <h3>전화 상담 신청</h3>
+        <p>아래 번호로 전화 주시면 됩니다. 지역·차량(오토바이)·경력 여부만 간단히 확인합니다.</p>
+      </div>
+      <div class="step">
+        <h3>비대면 가입 진행</h3>
+        <p>전화로 가입 절차가 진행됩니다. 예치금 0원, 준비할 보증금이 없습니다.</p>
+      </div>
+      <div class="step">
+        <h3>인성1·인성2 앱 세팅</h3>
+        <p>기사 프로그램 동시 가입과 앱 설치·사용법을 안내해 드립니다.</p>
+      </div>
+      <div class="step">
+        <h3>교육 후 첫 콜 시작</h3>
+        <p>초보자는 오프라인 노하우 교육을 받은 뒤, 본인 스케줄대로 바로 시작합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap" style="max-width:820px">
+    <div class="eyebrow">FAQ</div>
+    <h2>자주 묻는 질문</h2>
+    <p class="sec-lead">상담 전 가장 많이 받는 질문을 모았습니다.</p>
+
+    <details open>
+      <summary>퀵서비스가 처음인데 시작할 수 있나요?</summary>
+      <div class="a">가능합니다. 처음 시작하는 분들을 위해 오프라인 노하우 교육을 별도로 제공합니다. "길을 몰라서", "어떻게 일하는지 몰라서"라는 걱정은 교육 과정에서 해결해 드립니다.</div>
+    </details>
+    <details>
+      <summary>가입할 때 예치금이나 보증금이 있나요?</summary>
+      <div class="a">기사 예치금은 0원입니다. 시작할 때 보증금처럼 묶이는 돈이 없어 부담 없이 발만 담가볼 수 있습니다.</div>
+    </details>
+    <details>
+      <summary>정산은 언제 받을 수 있나요?</summary>
+      <div class="a">24시간 상시 출금이 가능합니다. 정산일까지 기다릴 필요 없이 번 돈을 필요할 때 바로 출금하시면 됩니다.</div>
+    </details>
+    <details>
+      <summary>사무실에 꼭 방문해야 하나요?</summary>
+      <div class="a">아니요. 비대면 전화 가입이 가능합니다. 전화 한 통으로 가입 절차가 진행되며 사무실을 찾아가지 않으셔도 됩니다.</div>
+    </details>
+    <details>
+      <summary>수수료는 얼마인가요?</summary>
+      <div class="a">오토바이 기준 기본 수수료 23%입니다. 인성데이타 수수료는 자율형으로 일부 고수익 콜은 수수료 없는 콜도 존재하며, 오더 수락 전 수수료를 확인한 후 콜을 선택할 수 있습니다.</div>
+    </details>
+    <details>
+      <summary>화물차로도 지원할 수 있나요?</summary>
+      <div class="a">현재는 오토바이(바이크) 기사님만 모집하고 있습니다. 화물 차량 모집은 진행하지 않습니다.</div>
+    </details>
+  </div>
+</section>
+
+</div><!-- /roadline -->
+
+<!-- ================= 하단 CTA ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="bottom-cta">
+      <h2>지금 전화 주시면, 오늘부터 기사님입니다</h2>
+      <p>예치금 0원 · 비대면 가입 · 24시간 출금 · 초보 교육 제공</p>
+      <a class="btn btn-fill" href="tel:05082024690">📞 전화 가입 신청하기</a>
+      <div class="tel">0508-202-4690</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 푸터 (E-E-A-T 신호) ================= -->
+<footer id="company">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>인성데이타 퀵서비스 (상호명 교체)</h4>
+        <p>인성데이타 인성1·인성2 연동 기사 프로그램을 운영하는 퀵서비스 사무실입니다. 전국 오토바이 퀵서비스 기사님을 상시 모집합니다.</p>
+      </div>
+      <div>
+        <h4>바로가기</h4>
+        <ul>
+          <li><a href="#recruit">기사 모집 안내</a></li>
+          <li><a href="#fee">수수료 안내</a></li>
+          <li><a href="#process">가입 절차</a></li>
+          <li><a href="#faq">자주 묻는 질문</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가입 문의</h4>
+        <ul>
+          <li>전화: <a href="tel:05082024690">0508-202-4690</a></li>
+          <li>상담 가능 시간: 연중무휴 (교체)</li>
+          <li>카카오톡 채널: (링크 교체)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-legal">
+      상호: (교체) · 대표자: (교체) · 사업자등록번호: (교체)<br>
+      주소: (교체) · 콘텐츠 책임자: (교체)<br>
+      © 2026 인성데이타 퀵서비스. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<span id="recruit" style="position:absolute;top:0"></span>
+
+<script>
+function toggleNav(btn){
+  const nav = document.getElementById('gnb');
+  const open = nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+// 모바일: 메뉴 링크 클릭 시 닫기
+document.querySelectorAll('#gnb a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    const nav=document.getElementById('gnb');
+    if(nav.classList.contains('open')){
+      nav.classList.remove('open');
+      document.querySelector('.ham').setAttribute('aria-expanded','false');
+    }
+  });
+});
+</script>
+</body>
+</html>
