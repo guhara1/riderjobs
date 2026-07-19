@@ -41,15 +41,16 @@ header{
   background:rgba(250,251,253,.92);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
-.nav-bar{display:flex;align-items:center;gap:28px;height:66px}
+.nav-bar{display:flex;align-items:center;gap:18px;height:66px}
 .logo{font-family:'GmarketSans';font-size:1.15rem;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
 .logo b{color:var(--accent)}
 .logo-mark{width:26px;height:26px;border-radius:7px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:.8rem}
 nav.gnb{margin-left:auto}
-nav.gnb ul{list-style:none;display:flex;gap:4px}
+nav.gnb ul{list-style:none;display:flex;align-items:center;gap:2px}
 nav.gnb > ul > li{position:relative}
 nav.gnb > ul > li > a{
-  display:block;padding:10px 14px;font-weight:600;font-size:.95rem;border-radius:8px;
+  display:block;padding:10px 12px;font-weight:600;font-size:.9rem;border-radius:8px;
+  white-space:nowrap;
 }
 nav.gnb > ul > li > a:hover{background:#EEF1F7}
 .sub{
@@ -58,7 +59,7 @@ nav.gnb > ul > li > a:hover{background:#EEF1F7}
   box-shadow:0 12px 32px rgba(17,27,60,.12);
   padding:8px;display:none;flex-direction:column;gap:2px;
 }
-.sub a{padding:9px 12px;border-radius:8px;font-size:.9rem;color:var(--ink-soft);display:block}
+.sub a{padding:9px 12px;border-radius:8px;font-size:.9rem;color:var(--ink-soft);display:block;white-space:nowrap}
 .sub a:hover{background:#F2F5FA;color:var(--ink)}
 nav.gnb li:hover > .sub, nav.gnb li:focus-within > .sub{display:flex}
 .cta-head{
@@ -69,7 +70,7 @@ nav.gnb li:hover > .sub, nav.gnb li:focus-within > .sub{display:flex}
 .ham{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:1.05rem;cursor:pointer}
 
 /* 모바일 내비 */
-@media (max-width:880px){
+@media (max-width:1100px){
   nav.gnb{display:none;position:absolute;top:66px;left:0;right:0;background:var(--panel);
     border-bottom:1px solid var(--line);padding:10px 16px 18px;margin:0}
   nav.gnb.open{display:block}
