@@ -15,7 +15,6 @@
   src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
   font-weight:700; font-display:swap;
 }
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -248,3 +247,6 @@ footer a:hover{color:var(--ink);text-decoration:underline}
 .hero-banner img{width:100%;height:auto;display:block;border-radius:16px;
   box-shadow:0 10px 30px rgba(17,27,60,.12)}
 @media (max-width:600px){.hero-banner{padding:12px 0 0}.hero-banner img{border-radius:12px}}
+
+/* 콘텐츠 페이지 h1(대표 제목) */
+main section:not(.hero) h1{font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:-.01em;line-height:1.28;margin-bottom:14px}
