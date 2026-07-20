@@ -250,3 +250,14 @@ footer a:hover{color:var(--ink);text-decoration:underline}
 
 /* 콘텐츠 페이지 h1(대표 제목) */
 main section:not(.hero) h1{font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:-.01em;line-height:1.28;margin-bottom:14px}
+
+/* ============ 롱테일 내부링크 허브 ============ */
+.linkhub{background:var(--panel);border-top:1px solid var(--line);padding:52px 0}
+.linkhub .lh-head{font-size:.85rem;font-weight:700;letter-spacing:.12em;color:var(--accent);margin-bottom:20px}
+.linkhub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 32px}
+@media(max-width:760px){.linkhub-grid{grid-template-columns:1fr}}
+.linkhub-col h3{font-size:.95rem;margin-bottom:12px;color:var(--ink)}
+.linkhub-col ul{list-style:none}
+.linkhub-col li{margin-bottom:9px;line-height:1.4}
+.linkhub-col a{color:var(--ink-soft);font-size:.92rem}
+.linkhub-col a:hover{color:var(--accent-dark);text-decoration:underline}
