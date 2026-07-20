@@ -233,12 +233,18 @@ details .a{padding:0 22px 20px;color:var(--ink-soft);font-size:.95rem}
 .bottom-cta .btn-fill{font-size:1.1rem;padding:17px 34px}
 .bottom-cta .tel{margin-top:18px;font-family:'GmarketSans';font-size:1.3rem;color:var(--road)}
 
-/* 푸터 (E-E-A-T: 운영 주체·연락처·책임자 명시) */
-footer{padding:56px 0 70px;color:var(--steel);font-size:.88rem}
-.f-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;margin-bottom:28px}
-@media (max-width:720px){.f-grid{grid-template-columns:1fr}}
-footer h4{color:var(--ink);font-size:.95rem;margin-bottom:12px}
-footer li{list-style:none;margin-bottom:8px}
+/* 푸터 (E-E-A-T: 운영주체·연락처·사이트 네비게이션) */
+footer{padding:56px 0 64px;color:var(--steel);font-size:.88rem;background:var(--panel);border-top:1px solid var(--line)}
+.f-top{display:grid;grid-template-columns:1.3fr 2.7fr;gap:40px;margin-bottom:32px}
+@media(max-width:880px){.f-top{grid-template-columns:1fr;gap:30px}}
+.f-brand .logo{font-family:'GmarketSans';font-size:1.1rem;color:var(--ink);margin-bottom:12px}
+.f-brand p{margin-bottom:16px;max-width:30em;line-height:1.7}
+.f-cta{font-size:.95rem;padding:12px 20px}
+.f-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:680px){.f-nav{grid-template-columns:repeat(2,1fr);gap:22px}}
+footer h4{color:var(--ink);font-size:.92rem;margin-bottom:12px}
+footer li{list-style:none;margin-bottom:9px;line-height:1.4}
+footer address{font-style:normal}
 footer a:hover{color:var(--ink);text-decoration:underline}
 .f-legal{border-top:1px solid var(--line);padding-top:22px;line-height:1.9}
 
@@ -252,12 +258,18 @@ footer a:hover{color:var(--ink);text-decoration:underline}
 main section:not(.hero) h1{font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:-.01em;line-height:1.28;margin-bottom:14px}
 
 /* ============ 롱테일 내부링크 허브 ============ */
-.linkhub{background:var(--panel);border-top:1px solid var(--line);padding:52px 0}
-.linkhub .lh-head{font-size:.85rem;font-weight:700;letter-spacing:.12em;color:var(--accent);margin-bottom:20px}
-.linkhub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 32px}
+.linkhub{background:var(--base);border-top:1px solid var(--line);padding:48px 0 56px}
+.linkhub .lh-head{font-family:'GmarketSans','Pretendard',sans-serif;font-size:1.15rem;color:var(--ink);margin-bottom:22px;letter-spacing:-.01em}
+.linkhub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:760px){.linkhub-grid{grid-template-columns:1fr}}
-.linkhub-col h3{font-size:.95rem;margin-bottom:12px;color:var(--ink)}
-.linkhub-col ul{list-style:none}
-.linkhub-col li{margin-bottom:9px;line-height:1.4}
-.linkhub-col a{color:var(--ink-soft);font-size:.92rem}
-.linkhub-col a:hover{color:var(--accent-dark);text-decoration:underline}
+.linkhub-col{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:8px 14px 10px}
+.linkhub-col h3{font-size:.9rem;color:var(--ink);margin:8px 6px 2px;padding-bottom:12px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
+.linkhub-col:nth-child(1) h3::before{content:"📋"}
+.linkhub-col:nth-child(2) h3::before{content:"🎓"}
+.linkhub-col:nth-child(3) h3::before{content:"📍"}
+.linkhub ul,.linkhub li{list-style:none;margin:0;padding:0}
+.linkhub-col a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 8px;font-size:.92rem;color:var(--ink-soft);border-radius:8px;line-height:1.35;min-height:44px}
+.linkhub-col li+li a{border-top:1px solid var(--line)}
+.linkhub-col a::after{content:"›";color:var(--steel);font-weight:700;font-size:1.15rem;line-height:1;transition:transform .12s ease}
+.linkhub-col a:hover{color:var(--accent-dark)}
+.linkhub-col a:hover::after{transform:translateX(3px);color:var(--accent)}
