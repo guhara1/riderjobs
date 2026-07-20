@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# 주요 검색엔진 크롤러 허용
+User-agent: Googlebot
+Allow: /
+User-agent: Yeti
+Allow: /
+
 Sitemap: https://rider-jobs.club/sitemap.xml
